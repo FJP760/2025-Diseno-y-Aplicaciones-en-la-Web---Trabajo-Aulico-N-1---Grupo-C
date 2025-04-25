@@ -1,0 +1,201 @@
+<!DOCTYPE html> <!--DOCTYPE correcto -->
+<html lang="es"> <!--Etiqueta html con atributo lang -->
+
+<head>
+    <title>Don Tobi</title> <!--Etiqueta <title> representativa -->
+    <!--Al menos 3 etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de mascotas Don Tobi">
+    <meta name="author"
+        content="Erreguerena Agustin Iñaki, Piloni Fabrizio Julian, Fernandez Lautaro Agustin, Fraga Facundo Roman">
+</head>
+
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #fefefe;">
+    <!--Header con el nombre de la tienda junto a su logo-->
+    <!--<header> con título y logo -->
+    <header>
+        <section align="center"> <!--'align' es obsoleto -->
+            <h1 style="color: #2d6a4f;">Tienda de mascotas Don Tobi</h1>
+            <!--Imagen con alt -->
+            <img src="https://i.pinimg.com/736x/9d/91/6a/9d916a7e65a33b6ed2c88d6cdb32ca38.jpg" alt="logo Don Tobi"
+                width="200" height="200" style="border-radius: 10px;">
+        </section>
+        <hr>
+    </header>
+
+    <main>
+        <!--<aside> con navegación interna -->
+        <aside>
+            <!--Lista de secciones con hipervinculo-->
+            <h2 style="color: #0ef0d6;">Secciones</h2>
+            <nav>
+                <!--Lista desordenada con enlaces internos -->
+                <ul style="padding: 0;">
+                    <li><a href="#Perritos" target="_self">Perritos</a></li>
+                    <li><a href="#Gatitos" target="_self">Gatitos</a></li>
+                    <li><a href="#Otros" target="_self">Otros</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <hr>
+        <!--Al menos 2 secciones -->
+        <section>
+            <!--Tabla precios-->
+            <!--Align es obsoleto en html5-->
+            <!--Style:
+                     width: 80%;: La tabla ocupa el 80% del ancho de su contenedor (por lo general, del <body>).
+                    text-align: center;: Centra horizontalmente el contenido dentro de las celdas.
+                    border-collapse: collapse;: Hace que los bordes de las celdas adyacentes se fusionen en uno solo, en lugar de mostrar doble borde.
+                    background-color: #f8f9fa;: Establece un color de fondo claro (gris muy suave) para toda la tabla.
+                -->
+            <!--Tabla con encabezados -->
+            <table align="center" border="1"
+                style="width: 80%; text-align: center; border-collapse: collapse; background-color: #f8f9fa;">
+                <tr style="background-color: #a8dadc;">
+                    <th>CATEGORÍA</th>
+                    <th>PRODUCTO</th>
+                    <th>PRECIO</th>
+                </tr>
+                <!-- Perros -->
+                <tr>
+                    <td>Perros</td>
+                    <td>Alimento balanceado adulto (15kg)</td>
+                    <td>$10.500</td>
+                </tr>
+                <tr>
+                    <td>Perros</td>
+                    <td>Juguete mordedor de cuerda</td>
+                    <td>$1.200</td>
+                </tr>
+                <tr>
+                    <td>Perros</td>
+                    <td>Correa retráctil</td>
+                    <td>$3.500</td>
+                </tr>
+
+                <!-- Gatos -->
+                <tr>
+                    <td>Gatos</td>
+                    <td>Alimento seco premium (7kg)</td>
+                    <td>$7.800</td>
+                </tr>
+                <tr>
+                    <td>Gatos</td>
+                    <td>Arenas sanitarias perfumadas</td>
+                    <td>$2.100</td>
+                </tr>
+                <tr>
+                    <td>Gatos</td>
+                    <td>Rascador con pelotas</td>
+                    <td>$4.250</td>
+                </tr>
+
+                <!-- Otros -->
+                <tr>
+                    <td>Otros</td>
+                    <td>Alimento para peces tropicales (frasco 250g)</td>
+                    <td>$950</td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td>Jaula para hámster con ruedas</td>
+                    <td>$5.000</td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td>Bañera para aves medianas</td>
+                    <td>$1.300</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+        <!--Seccion de perros-->
+        <!--Sección con id 'Perritos' -->
+        <section id="Perritos">
+            <h2 style="color: #2a9d8f;">Perritos</h2>
+            <!--Articulos-->
+            <!--Al menos 1 <article> -->
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Alimento balanceado adulto (15kg)</h3>
+                <p>Precio: $10.500</p>
+                <img src="imagenes/alimento balanceado perro.webp" alt="Alimento para perro"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Juguete mordedor de cuerda</h3>
+                <p>Precio: $1.200</p>
+                <img src="imagenes/juguete cuerda.jpg" alt="Juguete para perro"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Correa retráctil</h3>
+                <p>Precio: $3.500</p>
+                <img src="imagenes/correa retractil.webp" alt="Correa para perro"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+        </section>
+
+        <hr>
+        <!--Seccion de gatos-->
+        <section id="Gatitos">
+            <h2 style="color: #2a9d8f;">Gatitos</h2>
+            <!--Articulos-->
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Alimento seco premium (7kg)</h3>
+                <p>Precio: $7.800</p>
+                <img src="imagenes/alimento seco gato.png.avif" alt="Alimento para gato"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Arenas sanitarias perfumadas</h3>
+                <p>Precio: $2.100</p>
+                <img src="imagenes/arena sanitaria gato.jpg" alt="Arena sanitaria para gato"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Rascador con pelotas</h3>
+                <p>Precio: $4.250</p>
+                <img src="imagenes/rascador gatos.png" alt="Rascador para gato"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+        </section>
+
+        <hr>
+        <!--Seccion de perros-->
+        <section id="Otros">
+            <h2 style="color: #2a9d8f;">Otros</h2>
+            <!--Articulos-->
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Alimento para peces tropicales (250g)</h3>
+                <p>Precio: $950</p>
+                <img src="imagenes/alimento para peces.jpg" alt="Alimento para peces"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Jaula para hámster con ruedas</h3>
+                <p>Precio: $5.000</p>
+                <img src="imagenes/jaula para hamster.webp" alt="Jaula para hámster"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+            <article class="producto" style="margin-bottom: 20px;">
+                <h3>Bañera para aves medianas</h3>
+                <p>Precio: $1.300</p>
+                <img src="imagenes/bañera para loro.webp" alt="Bañera para aves"  width="200" height="200"
+                    style="border: 1px solid #ccc;">
+            </article>
+        </section>
+    </main>
+
+    <hr>
+    <!--<footer> con información de contacto -->
+    <footer style="text-align: center;">
+        <p><strong>Don Tobi</strong></p>
+        <p><strong>Dirección:</strong> Avenida 213, Ciudad Verde</p>
+        <p><strong>Tel:</strong> +54 376 400-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:donTobi@gmail.com">donTobi@gmail.com</a></p>
+        <p style="font-size: 0.9em;">&copy; 2025 Don Tobi. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
